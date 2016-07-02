@@ -1,0 +1,60 @@
+// Global form styles
+// ------------------------------------------------------------------------------
+
+.rsvp-form
+{
+  iframe
+  {
+    width: 100%;
+    height: 1000px; 
+  }
+
+  .freebirdFormviewerViewFormCard
+  {
+    &:first-of-type
+    {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+
+@include breakpoint(medium) {
+  .rsvp-form
+  {
+    iframe
+    {
+      width: 100%;
+      height: 1000px; 
+    }
+
+    .freebirdFormviewerViewFormCard
+    {
+      &:first-of-type
+      {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+
+@include breakpoint(wide) {
+  .rsvp-form
+  {
+
+    iframe
+    {
+      width: 100%;
+      height: 1000px; 
+    }
+
+    .freebirdFormviewerViewFormCard
+    {
+      &:first-of-type
+      {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}

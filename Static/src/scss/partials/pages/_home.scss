@@ -1,0 +1,73 @@
+// Homepage specific styles
+// ------------------------------------------------------------------------------
+
+
+.hello
+{
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  height: 400px;
+
+  &__image-flowers
+  {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 200%;
+  }
+
+  &__image-manda
+  {
+    position: absolute;
+    top: 350px;
+    right: -3%;
+    width: 200px;
+  }
+}
+
+#info
+{
+  background: #302b3e;
+}
+
+#gifts
+{
+  background: #302b3e;
+} 
+
+@include breakpoint(medium) {
+  .hello
+  {
+    &__image-flowers
+    {
+      z-index: 5;
+      position: absolute;
+      left: -5px;
+      bottom: -5px;
+      width: 200%;
+    }
+
+    &__image-manda
+    {
+      right: 12%;
+      width: 330px;
+    }
+  }
+}
+
+@include breakpoint(large) {
+  .hello
+  {
+    height: 500px;
+
+    &__image-manda
+    {
+      right: 240px;
+      width: 460px;
+    }
+  } 
+}
+
+

@@ -1,0 +1,37 @@
+// Site settings
+// ------------------------------------------------------------------------------
+
+$oldIE: false !default;
+
+
+// Media Queries
+// ------------------------------------------------------------------------------
+
+// https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints
+$breakpoints: (
+	small:  320px,  /* Smartphones --------------- */
+	medium: 768px,  /* Tablets Portrait ---------- */
+	large:  1224px, /* Desktops and laptops ------ */
+	xlarge: 1824px  /* Large screens ------------- */
+);
+
+$small:  map-get($breakpoints, small);
+$medium: map-get($breakpoints, medium),'no-query' true;
+$large:  map-get($breakpoints, large),'no-query' true;
+$xlarge: map-get($breakpoints, xlarge),'no-query' true;
+
+
+// Font Families
+// ------------------------------------------------------------------------------
+
+$sofia-rough: "Sofia Rough Black Two", "Papyrus", "fantasy", "serif";
+$muli: "Muli", "Tahoma", "sans-serif";
+$antonio: "Antonio", "Verdana", "sans-serif";
+
+
+// Font weights
+// ------------------------------------------------------------------------------
+
+$lightWeight: 300;
+$regularWeight: 400;
+$boldWeight: 600;

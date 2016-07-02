@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Base - Icons</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+    <link rel="stylesheet" href="./theme-build/css/bootstrap.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="../css/main.css">
+      
+    
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      
+      
+        
+        
+          
+        
+      
+        
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+          
+        </ul>
+        
+          <h3>Base</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a href="base_-_buttons.html">Buttons</a></li>
+              
+            
+          
+            
+              
+              
+                <li><a class="active" href="base_-_icons.html">Icons</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      
+        <h1>Icons</h1>
+      
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+            
+              
+                <li><a href="#icons">Icons</a></li>
+              
+            
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+          <div class="cortana-content">
+
+
+
+<h1 id="icons" class="styleguide">Icons</h1>
+
+<p>The following icons are available to the development team.</p>
+
+<table><thead>
+<tr>
+<th>Icon</th>
+<th>Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><div class="f-icon icon-arrow-right"></div></td>
+<td><pre>icon-arrow-right</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-arrow-left"></div></td>
+<td><pre>icon-arrow-left</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-search"></div></td>
+<td><pre>icon-search</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-download"></div></td>
+<td><pre>icon-download</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-down-open"></div></td>
+<td><pre>icon-down-open</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-up-open"></div></td>
+<td><pre>icon-up-open</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-home"></div></td>
+<td><pre>icon-home</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-events"></div></td>
+<td><pre>icon-events</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-news"></div></td>
+<td><pre>icon-news</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-right-open"></div></td>
+<td><pre>icon-right-open</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-left-open"></div></td>
+<td><pre>icon-left-open</pre></td>
+</tr>
+<tr>
+<td><div class="f-icon icon-category"></div></td>
+<td><pre>icon-category</pre></td>
+</tr>
+</tbody></table>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Build with love using Trulia's <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/Yago/Cortana">Cortana</a> !
+    </footer>  
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+
+    angular.module("cortana").controller("TypeaheadCtrl", function($scope) {
+      $scope.selected = undefined;
+      $scope.searchData = 
+      [
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Buttons",
+              "breadcrumb": "Base - Buttons > Buttons",
+              "path": "base_-_buttons.html#buttons"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Icons",
+              "breadcrumb": "Base - Icons > Icons",
+              "path": "base_-_icons.html#icons"
+              },
+            
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    });
+
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  
+  <!-- Source Components -->
+  
+</body>
+</html>

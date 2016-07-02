@@ -1,0 +1,46 @@
+// Scaffolding styles are declared here. e.g containers, grid
+// ------------------------------------------------------------------------------
+
+
+*, *:before, *:after {@include prefixer(box-sizing, border-box, webkit moz spec); }
+
+html {
+	font-family: "mobile";
+
+	@include breakpoint(medium) {
+	 	font-family: "tablet";
+  }
+
+	@include breakpoint(large) {
+		font-family: "desktop";
+	}
+}
+
+body
+{
+  background: #3a2b3e;
+}
+
+.inner-container
+{
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+section
+{
+  min-height: 400px;
+  padding: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Pompiere', cursive;
+  text-transform: uppercase; 
+}
+
+p, a
+{
+  font-family: sans-serif;
+}
