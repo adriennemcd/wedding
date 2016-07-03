@@ -6,7 +6,6 @@
 		<title>Mike + Adrienne</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Amatica+SC:700|Pompiere" rel="stylesheet">
 
 		<!--[if (gt IE 8) | (IEMobile)]><!-->
 			<link rel="stylesheet" href="/Static/dist/css/main.css" />
@@ -21,23 +20,26 @@
 	<body>
 		<header data-component="show-form">
 				<div class="inner-container">
-				<section id="hello" class="hello">
-						<img class="hello__image-flowers js-flower visible-mobile" src="Static/src/images/flowers.svg" data-component="moonrise" />
-						<img class="hello__image-flowers js-flower hidden-mobile" src="Static/src/images/flowers-wide.svg" data-component="moonrise" />
-						<img class="hello__image-manda js-moonrise" src="Static/src/images/mikeandadrienne.svg" />
+				<section class="banner">
+						<img class="banner__image-flowers js-flower visible-mobile" src="Static/assets/images/flowers.svg" data-component="moonrise" />
+						<img class="banner__image-flowers js-flower hidden-mobile" src="Static/assets/images/flowers-wide.svg" data-component="moonrise" />
+						<img class="banner__image-manda js-moonrise" src="Static/assets/images/mikeandadrienne.svg" />
 				</section>
 				<nav class="main-nav">
 					<ul class="main-nav__list">
 						<li class="main-nav__item"><a class="main-nav__link" href="#hello">Hello</a></li>
 						<li class="main-nav__item"><a class="main-nav__link" href="#info">Info</a></li>
 						<li class="main-nav__item"><a class="main-nav__link" href="#gifts">Gifts</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="#" class="js-show-form">RSVP</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="#rsvp" class="js-show-form">RSVP</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main>
 			<div class="inner-container">
+				<section id="hello">
+					<img src="Static/assets/images/manda.jpg" />
+				</section>
 				<section id="info">
 					<h1>Info</h1>
 				</section>
@@ -45,7 +47,7 @@
 					<h1>Gifts</h1>
 				</section>
 								<div class="rsvp-form">
-					<section id="contact">
+					<section id="rsvp">
 						<div class="sectionheader">	
 							<h1>RSVP</h1>
 						</div>

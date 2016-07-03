@@ -22,7 +22,7 @@ define(function() {
             $('.js-flower').css({'left':'-90px','width':'150%'}, 3000);
           } else if ( $('html').css('font-family') == "tablet" ) {
             $('.js-moonrise').css({'top':'10px'});
-            $('.js-flower').css({'width':'135%', 'left':'0px'});
+            $('.js-flower').css({'width':'135%', 'left':'-5px'});
             console.log('tablet');
           } else {
             $('.js-moonrise').css({'top':'10px'});
