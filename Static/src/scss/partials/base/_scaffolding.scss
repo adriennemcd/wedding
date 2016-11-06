@@ -18,7 +18,7 @@ html {
 
 body 
 {
-  background: #3a2b3e;
+  background: #e0e4ea;
 }
 
 .inner-container
@@ -26,21 +26,19 @@ body
   width: 100%;
   max-width: 1224px;
   margin: 0 auto;
+  padding: 0 $padding-mobile;
 }
 
-section
+img 
 {
-  min-height: 400px;
-  padding: 20px 0;
+  display: block;
+  max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6
+input, textarea, button
 {
-  font-family: 'Redwood', sans-serif;
-  text-transform: uppercase; 
-}
-
-p, a
-{
-  font-family: sans-serif;
+  &:focus
+  {
+    outline: 1px solid $dodger-blue;
+  }
 }

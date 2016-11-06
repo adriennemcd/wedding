@@ -2,40 +2,55 @@
 // ------------------------------------------------------------------------------
 
 
-.banner
+// .banner
+// {
+//   position: relative;
+//   background: #fff;
+//   overflow: hidden;
+//   height: 400px;
+
+//   &__image-flowers
+//   {
+//     z-index: 5;
+//     position: absolute;
+//     left: 0;
+//     bottom: -5px;
+//     width: 200%;
+//   }
+
+//   &__image-manda
+//   {
+//     position: absolute;
+//     top: 350px;
+//     right: -3%;
+//     width: 200px;
+//   }
+// }
+
+.hello
 {
-  position: relative;
   background: #fff;
-  overflow: hidden;
-  height: 400px;
 
-  &__image-flowers
+  &__img 
   {
-    z-index: 5;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 200%;
-  }
-
-  &__image-manda
-  {
-    position: absolute;
-    top: 350px;
-    right: -3%;
-    width: 200px;
+    width: 100%;
   }
 }
 
 #info
 {
-  background: #302b3e;
+ background: #fff;
 }
 
 #gifts
 {
-  background: #302b3e;
+  background: #fff;
 } 
+
+#rsvp
+{
+  background: #fff;
+}
 
 @include breakpoint(medium) {
   .banner
@@ -55,6 +70,27 @@
       width: 330px;
     }
   }
+
+  .hello
+  {
+    &__img
+    {
+      display: inline-block;
+      // width: span(4);
+      width: 25%;
+      margin-right: 30px;
+      vertical-align: top;
+
+    }
+
+    &__content
+    {
+      display: inline-block;
+      // width: span(8);
+      width: 65%;
+      vertical-align: top;
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -64,7 +100,7 @@
 
     &__image-manda
     {
-      right: 240px;
+      right: 200px;
       width: 460px;
     }
   } 

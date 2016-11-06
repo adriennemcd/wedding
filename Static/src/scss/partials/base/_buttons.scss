@@ -23,15 +23,17 @@ Preview  | Class
 .btn-primary
 {
   display: inline-block;
-  padding: 4px 10px;
-  font-size: 12px;
+  padding: 7px 14px 4px;
+  font-family: $font-button;
+  font-size: 16px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  background: $blue-primary;
+  background: $havelock-blue;
   border: none;
   transition: background 0.25s ease-in;
+  cursor: pointer;
 
   &.lg { padding: 6px 14px; }
 }
@@ -50,6 +52,6 @@ Preview  | Class
 .btn-primary {
 	@extend %btn-base;
 	&:hover {
-		background: #2276af;
+		background: $dodger-blue;
 	}
 }

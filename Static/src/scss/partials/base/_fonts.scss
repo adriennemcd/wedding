@@ -20,3 +20,25 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Meltow Marker";
+  src: url('../../assets/fonts/meltow/Meltow-Marker.eot?81278657');
+  src: url('../../assets/fonts/meltow/Meltow-Marker.eot?81278657#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/meltow/Meltow-Marker.woff?81278657') format('woff'),
+       url('../../assets/fonts/meltow/Meltow-Marker.ttf?81278657') format('truetype'),
+       url('../../assets/fonts/meltow/Meltow-Marker.svg?81278657#Redwood') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Meltow Sans";
+  src: url('../../assets/fonts/meltow/MeltowSan100-Regular.eot?81278657');
+  src: url('../../assets/fonts/meltow/MeltowSan100-Regular.eot?81278657#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/meltow/MeltowSan100-Regular.woff?81278657') format('woff'),
+       url('../../assets/fonts/meltow/MeltowSan100-Regular.ttf?81278657') format('truetype'),
+       url('../../assets/fonts/meltow/MeltowSan100-Regular.svg?81278657#Redwood') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

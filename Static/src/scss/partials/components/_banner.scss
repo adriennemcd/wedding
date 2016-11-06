@@ -1,0 +1,33 @@
+.banner
+{
+  padding: 180px 0 0;
+  background: $white;
+
+  &__title
+  {
+    width: 81.5%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__date
+  {
+    max-width: 205px;
+    margin: 0 auto;
+    padding: 25px 0 95px;
+  }
+
+  &__leaves-left
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__leaves-right
+  {
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+}

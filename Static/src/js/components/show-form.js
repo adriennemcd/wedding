@@ -4,7 +4,7 @@ define(function() {
 
     init: function() {
       $('.js-show-form').on('click', function() {
-        $('.rsvp-form').slideToggle();
+        $('.rsvp__form').slideToggle();
       });
     }
     

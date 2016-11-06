@@ -1,0 +1,20 @@
+.section
+{
+  padding: 0 0 rem(30);
+  background: $white;
+  
+  &__title
+  {
+    margin: 0 0 rem(30);
+    padding: $padding-mobile 0 0;
+    text-align: center;
+    font-family: $font-section;
+    font-size: 60px;
+    color: $white;
+    line-height: 1;
+    background: url('/../Static/assets/images/banner.png');
+    cursor: pointer;
+
+    &.rsvp__title { margin: 0; }
+  }
+}

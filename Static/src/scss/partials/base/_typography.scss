@@ -3,6 +3,31 @@
 
 @import "fonts";
 
-h1 {}
-h2 {}
-h3 {}
+html
+{
+  font-size: 14px;
+}
+
+body
+{
+  font-family: $font-body;
+  color: #666;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  margin: 0;
+  font-family: $font-heading;
+}
+
+h3
+{
+  margin: 20px 0 0;
+  font-size: rem(21);
+}
+
+p 
+{
+  margin: 0 0 rem(16); 
+}

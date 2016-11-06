@@ -24,10 +24,10 @@ $xlarge: map-get($breakpoints, xlarge),'no-query' true;
 // Font Families
 // ------------------------------------------------------------------------------
 
-$sofia-rough: "Sofia Rough Black Two", "Papyrus", "fantasy", "serif";
-$muli: "Muli", "Tahoma", "sans-serif";
-$antonio: "Antonio", "Verdana", "sans-serif";
-
+$font-body: "Roboto", "sans-serif";
+$font-heading: "Meltow Sans", "sans-serif";
+$font-section: "Meltow Marker";
+$font-button: "Meltow Sans", "sans-serif";
 
 // Font weights
 // ------------------------------------------------------------------------------
@@ -35,3 +35,8 @@ $antonio: "Antonio", "Verdana", "sans-serif";
 $lightWeight: 300;
 $regularWeight: 400;
 $boldWeight: 600;
+
+// Padding
+// ------------------------------------------------------------------------------
+
+$padding-mobile: 15px;

@@ -6,7 +6,7 @@
 		<title>Mike + Adrienne</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<!--[if (gt IE 8) | (IEMobile)]><!-->
 			<link rel="stylesheet" href="/Static/dist/css/main.css" />
 		<!--<![endif]-->
@@ -19,74 +19,91 @@
 	</head>
 	<body>
 		<header data-component="show-form">
-				<div class="inner-container">
-				<section class="banner">
-						<img class="banner__image-flowers js-flower visible-mobile" src="Static/assets/images/flowers.svg" data-component="moonrise" />
-						<img class="banner__image-flowers js-flower hidden-mobile" src="Static/assets/images/flowers-wide.svg" data-component="moonrise" />
-						<img class="banner__image-manda js-moonrise" src="Static/assets/images/mikeandadrienne.svg" />
+			<div class="rsvp-form" data-component="autocomplete">
+				<section id="rsvp" class="rsvp">
+					<div class="rsvp__title section__title js-show-form" tabindex='0'>RSVP!</div>
+					<div class="inner-container">
+						<form class="rsvp__form" action="https://briskforms.com/go/54db55068cf2c2e933b27d9d61006ee5" method="post">
+							<label class="rsvp__label" for="names">Your name(s)</label>
+							<input class="rsvp__input" type="text" name="1names1" id="names">
+							<label class="rsvp__label" for="word">The fun word found on your invite</label>
+							<input class="rsvp__input" type="text" value="" name="1word1" id ="word">
+							<input class="rsvp__input" type="radio" value="Yes" name="option" id="option1">
+							<label class="rsvp__label rsvp__label--radio" for="option1">Accept with pleasure</label><br>
+							<input class="rsvp__input" type="radio" value="No" name="option" id="option2">
+							<label class="rsvp__label rsvp__label--radio" for="option2">Decline with regrets</label><br>
+							<label class="rsvp__label" for="location">What city/town are you traveling from?</label>
+							<input class="rsvp__input" type="text" value="" name="1location1" id="location">
+							<label class="rsvp__label" for="note">Send us a note if you like!</label>
+							<textarea class="rsvp__input" name="1note1" rows="5" id="note">
+							</textarea>
+							<button class="btn-primary" type="submit" name="1submit1" value="Submit">Submit</button>	
+						</form>
+					</div>
 				</section>
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a class="main-nav__link" href="#hello">Hello</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="#info">Info</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="#gifts">Gifts</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="#rsvp" class="js-show-form">RSVP</a></li>
-					</ul>
-				</nav>
 			</div>
+			<section class="banner">
+				<div class="inner-container">
+					<img class="banner__title" src="Static/assets/images/title-mbl.png"/>
+					<img class="banner__date" src="Static/assets/images/date.png"/>
+					<img class="banner__leaves-left" src="Static/assets/images/leaves-left.png" />
+					<img class="banner__leaves-right" src="Static/assets/images/leaves-right.png" />
+				</div>
+			</section>
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a class="main-nav__link" href="#hello">Hello</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#info">Info</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#gifts">Gifts</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#rsvp" class="js-show-form">RSVP</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
-			<div class="inner-container">
-				<section id="hello">
-					<img src="Static/assets/images/manda.jpg" />
+			<!-- <div class="inner-container"> -->
+				<!-- <section id="hello" class="hello">
+					<div class="inner-container">
+						<h1>Hello</h1>
+						<img class="hello__img" src="Static/assets/images/manda.jpg" />
+						<p class="hello__content">
+							Hey!<br />
+							We're getting married and we're so thankful that you'll be there to celebrate with us.
+						</p>
+					</div>
+				</section> -->
+				<section id="info" class="section">
+					<h2 class="section__title">Info</h2>
+					<div class="inner-container">
+						<h3>When</h3>
+						<p>October 21st, 2017<br />
+						3pm - 9pm</p>
+						<h3>Where</h3>
+						<p>Awbury Arboretum<br />
+							<a href="https://goo.gl/maps/1LSbGbWnGBE2" target="_blank">1 Awbury Rd, Philadelphia, PA 19138</a>
+						</p>
+						<h3>Directions</h3>
+						<p>When in doubt, use google</p>
+						<h3>Parking</h3>
+						<p>Here's where you can park</p>
+						<h3>Hotel</h3>
+						<p>We booked some rooms in this hotel</p>
+						<h3>Wait, the wedding ends at 9pm?</h3>
+						<p>Yes, yes it does.  Awbury is in a residential area, and out of respect for the neighbors, the wedding must end at 9.  If you want to keep celebrating with us, please join us here!</p> 
+					</div>
 				</section>
-				<section id="info">
-					<h1>Info</h1>
+				<section id="gifts" class="section">
+					<h2 class="section__title">Gifts</h2>
+					<div class="inner-container">
+					</div>
 				</section>
-				<section id="gifts">
-					<h1>Gifts</h1>
+				<section id="thanks" class="section">
+					<h2 class="section__title">Thank You</h2>
+					<div class="inner-container">
+						<p>Thank you for traveling near and far to celebrate with us!  It means so much.</p>
+					</div>
 				</section>
-								<div class="rsvp-form">
-					<section id="rsvp">
-						<div class="sectionheader">	
-							<h1>RSVP</h1>
-						</div>
-						<article>
-							<p>We can't wait to see you!</p>
-							<form action="https://docs.google.com/forms/d/1Wq_yXPT4PuquA6pyvVIfl9n8FmaW8mJ6IG_8IJ8mRDY/formResponse" method="post" class="contactform">
-									<p class="input_wrapper">
-										<input type="text" name="entry.766362834" value=""  id ="entry.766362834">
-										<label for="entry.766362834">Your names(s)</label>
-									</p>
-									<p class="input_wrapper">
-										<input type="text" name="entry.982595721" value=""  id ="entry.982595721">
-										<label for="entry.982595721">The fun word found on your invite</label>
-									</p>
-									<p class="input_wrapper">
-										<input type="radio" name="entry.64618414" value="Yes"  id ="option1">
-										<label for="entry.64618414">Accept with pleasure</label>
-										<input type="radio" name="entry.1198742530" value="No"  id ="option2">
-										<label for="entry.1198742530">Decline with regrets</label>
-									</p>
-									<p class="input_wrapper">
-										<input type="text" name="entry.129497966" value=""  id ="entry.129497966">
-										<label for="entry.129497966">What city/town are you coming from?</label>
-									</p>
-									<p class="textarea_wrapper">
-										<label for="entry.258466500">Send us a note if you like!</label>
-										<textarea name="entry.258466500" id="entry.258466500">
-										</textarea>
-									</p>
-									<p class="submit_wrapper">
-										<input type="submit" value="Submit">
-									</p>			
-								</form>
-						</article>
-					</section>
-				</div>
-			</div>
 		</main>
-
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB-H1EmvAPfp5ef_lRWnjwPUIUuMYqrBYI&libraries=places"></script>
 		<script data-main="/Static/src/js/skeletor.main" src="/Static/src/js/lib/require.js"></script>
 
 	</body>

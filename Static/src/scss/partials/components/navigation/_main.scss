@@ -13,6 +13,7 @@
 
 /* Mobile main nav styles */
 .main-nav {
+	display: none;
 	background: #302b3e;
 
 	&__list
@@ -30,10 +31,10 @@
 
 	&__link
 	{
-		display: inline-block;
-		padding: 20px 15px;
+		display: none;
+		// padding: 20px 15px;
 		font-family: 'Redwood', sans-serif;
-		font-size: 1.2rem;
+		// font-size: 1.2rem;
 		color: #fff;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -49,8 +50,10 @@
 
 @include breakpoint(medium){
 	.main-nav {
+		display: block;
 		&__link
 		{
+			display: inline-block;
 			padding: 20px 40px;
 			font-size: 1.4rem; 
 		}

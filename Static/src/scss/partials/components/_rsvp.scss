@@ -1,0 +1,52 @@
+.rsvp
+{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 14px -5px rgba(0,0,0,0.69);
+  -moz-box-shadow: 0px 4px 14px -5px rgba(0,0,0,0.69);
+  box-shadow: 0px 4px 14px -5px rgba(0,0,0,0.69);
+
+  &__title
+  {
+    &:focus
+    {
+      color: #8ae8dc;
+      outline: none;
+    }
+  }
+
+  &__form
+  {
+    display: none;
+    padding: $padding-mobile 0;
+  }
+
+  &__label
+  {
+    &--radio
+    {
+      display: inline-block;
+      margin: rem(3) 0 rem(14);
+    }
+  }
+
+  &__input
+  {
+    display: block;
+    width: 100%;
+    margin: rem(3) 0 rem(14);
+    padding: rem(7);
+    background: $catskill-white;
+    border: 0;
+    outline: none;
+
+    &[type="radio"]
+    {
+      display: inline-block;
+      width: auto;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+}
