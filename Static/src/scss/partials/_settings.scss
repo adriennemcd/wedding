@@ -11,7 +11,7 @@ $oldIE: false !default;
 $breakpoints: (
 	small:  320px,  /* Smartphones --------------- */
 	medium: 768px,  /* Tablets Portrait ---------- */
-	large:  1224px, /* Desktops and laptops ------ */
+	large:  980px, /* Desktops and laptops ------ */
 	xlarge: 1824px  /* Large screens ------------- */
 );
 
@@ -40,3 +40,5 @@ $boldWeight: 600;
 // ------------------------------------------------------------------------------
 
 $padding-mobile: 15px;
+$padding-tablet: 30px;
+$padding-desktop: 60px;

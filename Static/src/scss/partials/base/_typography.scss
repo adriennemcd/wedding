@@ -31,3 +31,44 @@ p
 {
   margin: 0 0 rem(16); 
 }
+
+a
+{
+  color: $color-link;
+  text-decoration: none;
+  transition: color 200ms;
+
+  &:link, &:active, &:visited
+  {
+    color: $color-link;
+  }
+
+  &:hover, &:focus
+  {
+    color: $color-link-hover;
+  }
+}
+
+@include breakpoint(medium) {
+  h3
+  {
+    font-size: rem(25);
+  }
+
+  p 
+  {
+    font-size: 15px;
+  }
+}
+
+@include breakpoint(large) {
+  h3 
+  {
+    font-size: rem(28);
+  }
+
+  p 
+  {
+    font-size: 16px;
+  }
+}

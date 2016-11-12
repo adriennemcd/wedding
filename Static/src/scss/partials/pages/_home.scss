@@ -94,16 +94,7 @@
 }
 
 @include breakpoint(large) {
-  .banner
-  {
-    height: 500px;
-
-    &__image-manda
-    {
-      right: 200px;
-      width: 460px;
-    }
-  } 
+ 
 }
 
 

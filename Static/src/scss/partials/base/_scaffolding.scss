@@ -18,7 +18,9 @@ html {
 
 body 
 {
-  background: #e0e4ea;
+  max-width: 980px;
+  margin: 0 auto;
+  background: $catskill-white;
 }
 
 .inner-container
@@ -40,5 +42,19 @@ input, textarea, button
   &:focus
   {
     outline: 1px solid $dodger-blue;
+  }
+}
+
+@include breakpoint(medium) {
+  .inner-container
+  {
+    padding: 0 $padding-tablet;
+  }
+}
+
+@include breakpoint(large) {
+  .inner-container
+  {
+    padding: 0 $padding-desktop; 
   }
 }
