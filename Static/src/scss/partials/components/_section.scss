@@ -27,8 +27,15 @@
       -webkit-column-count: 2;
       -moz-column-count: 2;
       column-count: 2;
-
+      
       h3:first-child { margin-top: 0; }
+
+      h3 { column-break-after: avoid; }
+    }
+
+    &__content > * {
+      -webkit-column-break-inside: avoid;
+      column-break-inside: avoid;
     }
   }
 }
