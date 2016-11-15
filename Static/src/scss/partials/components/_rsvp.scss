@@ -9,6 +9,17 @@
   box-shadow: 0px 4px 14px -5px rgba(0,0,0,0.69);
   transition: transform 300ms;
 
+  &:after
+  {
+    @include fa($icon-double-down);
+    position: absolute;
+    top: 14px;
+    right: 30px;
+    font-size: 35px;
+    font-weight: normal;
+    color: $white;
+  }
+
   &.hidden 
   {
     transform: translateY(-100%);
@@ -18,11 +29,12 @@
   {
     &:after
     {
-      content: 'X';
+      @include fa($icon-double-up);
       position: absolute;
-      top: 20px;
-      right: 20px;
-      font-weight: bold;
+      top: 12px;
+      right: 30px;
+      font-size: 35px;
+      font-weight: normal;
       color: $white;
     }
   }
@@ -39,15 +51,29 @@
   &__form
   {
     display: none;
-    padding: $padding-mobile 0;
+    padding: $padding-tablet 0;
   }
 
   &__label
   {
+    font-family: $font-heading;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+
+    &--radio-title
+    {
+      margin: 0 0 rem(5);
+    }
+
     &--radio
     {
       display: inline-block;
-      margin: rem(3) 0 rem(14);
+      margin: rem(3) 0 rem(10);
+      font-family: $font-body;
+      font-size: 14px;
+      text-transform: none;
+      cursor: pointer;
     }
   }
 
@@ -55,7 +81,7 @@
   {
     display: block;
     width: 100%;
-    margin: rem(3) 0 rem(14);
+    margin: rem(3) 0 rem(32);
     padding: rem(7);
     background: $catskill-white;
     border: 0;
@@ -68,5 +94,12 @@
       margin: 0;
       vertical-align: middle;
     }
+  }
+
+  &__radio-group
+  {
+    margin: 0 0 rem(22);
+    padding: 0;
+    border: none;
   }
 }

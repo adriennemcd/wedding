@@ -42,3 +42,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@mixin fa($icon){
+    font-family: FontAwesome;
+    content: $icon;
+}
+
+$icon-arrow-down: '\f0d7';
+$icon-double-up: '\f102';
+$icon-double-down: '\f103';
+$icon-close: '\f00d';

@@ -26,14 +26,15 @@
 						<form class="rsvp__form" action="https://briskforms.com/go/54db55068cf2c2e933b27d9d61006ee5" method="post">
 							<label class="rsvp__label" for="names">Your name(s)</label>
 							<input class="rsvp__input" type="text" name="1names1" id="names">
-							<label class="rsvp__label" for="word">The fun word found on your invite</label>
-							<input class="rsvp__input" type="text" value="" name="1word1" id ="word">
-							<input class="rsvp__input" type="radio" value="Yes" name="option" id="option1">
-							<label class="rsvp__label rsvp__label--radio" for="option1">Accept with pleasure</label><br>
-							<input class="rsvp__input" type="radio" value="No" name="option" id="option2">
-							<label class="rsvp__label rsvp__label--radio" for="option2">Decline with regrets</label><br>
-							<label class="rsvp__label" for="location">What city/town are you traveling from?</label>
-							<input class="rsvp__input" type="text" value="" name="1location1" id="location">
+							<!-- <label class="rsvp__label" for="word">The fun word found on your invite</label>
+							<input class="rsvp__input" type="text" value="" name="1word1" id ="word"> -->
+							<fieldset class="rsvp__radio-group">
+								<legend class="rsvp__label rsvp__label--radio-title">Can you join us?</legend>
+								<input class="rsvp__input" type="radio" value="Yes" name="option" id="option1">
+								<label class="rsvp__label rsvp__label--radio" for="option1">Accept with pleasure</label><br>
+								<input class="rsvp__input" type="radio" value="No" name="option" id="option2">
+								<label class="rsvp__label rsvp__label--radio" for="option2">Decline with regrets</label><br>
+							</fieldset>
 							<label class="rsvp__label" for="note">Send us a note if you like!</label>
 							<textarea class="rsvp__input" name="1note1" rows="5" id="note">
 							</textarea>
@@ -88,6 +89,6 @@
 		</main>
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB-H1EmvAPfp5ef_lRWnjwPUIUuMYqrBYI&libraries=places"></script>
 		<script data-main="/Static/src/js/skeletor.main" src="/Static/src/js/lib/require.js"></script>
-
+		<script src="https://use.fontawesome.com/9e0c25975e.js"></script>
 	</body>
 </html>
