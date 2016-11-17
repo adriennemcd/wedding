@@ -103,3 +103,13 @@
     border: none;
   }
 }
+
+@include breakpoint(medium) {
+  .rsvp
+  {
+    &__form
+    {
+      padding: 50px 0;
+    }
+  }
+}
