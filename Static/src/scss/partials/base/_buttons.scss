@@ -20,7 +20,7 @@ Preview  | Class
 <button type="button" href="" class="btn-secondary">More</button>| <pre>btn-secondary</pre>
 */
 
-.btn-primary
+.btn-primary, a.btn-primary
 {
   display: inline-block;
   padding: 7px 14px 4px;
@@ -36,6 +36,13 @@ Preview  | Class
   cursor: pointer;
 
   &.lg { padding: 6px 14px; }
+
+  a 
+  {
+    color: $white;
+
+    &:hover { color: $white; }
+  }
 }
 
 .btn-secondary

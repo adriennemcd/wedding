@@ -36,6 +36,31 @@
   }
 }
 
+.form-confirmation
+{
+  .thanks__content
+  {
+    padding-bottom: 0;
+  }
+
+  .btn-primary
+  {
+    position: relative;
+    display: block;
+    width: 175px;
+    margin: 20px auto 30px;
+    padding-left: 38px;
+
+    &:before
+    {
+      @include fa($icon-arrow-left);
+      position: absolute;
+      top: 5px;
+      left: 14px;
+    }
+  }
+}
+
 @include breakpoint(medium) {
   .thanks
   {
