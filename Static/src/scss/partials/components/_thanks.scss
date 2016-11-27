@@ -19,8 +19,7 @@
 
   &__img
   {
-    width: 285px;
-    max-width: 350px;
+    width: 220px;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
@@ -29,11 +28,10 @@
   &__border
   {
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     right: 0;
-    width: 340px;
-    max-width: 420px;
+    width: 260px;
     margin: 0 auto;
   }
 }
