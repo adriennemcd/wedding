@@ -2,7 +2,7 @@
 // ------------------------------------------------------------------------------
 
 
-*, *:before, *:after {@include prefixer(box-sizing, border-box, webkit moz spec); }
+*, *:before, *:after {box-sizing: border-box; }
 
 html {
 	font-family: "mobile";
@@ -20,7 +20,7 @@ body
 {
   max-width: 980px;
   margin: 0 auto;
-  background: $catskill-white;
+  background: $te-papa-green;  
 }
 
 .inner-container

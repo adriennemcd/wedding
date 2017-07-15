@@ -18,11 +18,19 @@
     font-size: 35px;
     font-weight: normal;
     color: $white;
+    transition: font-size ease-out 300ms, top ease-out 300ms; 
   }
 
   &.hidden 
   {
-    transform: translateY(-100%);
+    .rsvp__title {
+      font-size: 40px;
+    }
+
+    &:after {
+      font-size: 30px;
+      top: 8px;
+    }
   }
 
   &.open
@@ -39,12 +47,16 @@
     }
   }
 
+  &.hidden.open {
+    &:after {
+      font-size: 30px;
+      top: 8px;
+    }
+  }
+
   &__title
   {
-    &:focus
-    {
-      outline: none;
-    }
+    transition: all ease-out .25s;
   }
 
   &__form
