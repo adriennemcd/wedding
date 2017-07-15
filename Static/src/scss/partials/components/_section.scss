@@ -6,7 +6,7 @@
   &__title
   {
     margin: 0 0 rem(30);
-    padding: $padding-mobile 0 0;
+    padding: 10px 0 5px;
     text-align: center;
     font-family: $font-section;
     font-size: 60px;
@@ -16,6 +16,12 @@
     cursor: pointer;
 
     &.rsvp__title { margin: 0; }
+
+    #gifts.section {
+      text-align: center;
+
+      a { display: inline-block; }
+    }
   }
 }
 
@@ -31,11 +37,11 @@
 
     &__content
     {
-      -webkit-column-count: 2;
+      -webkit-column-count: 2; 
       -moz-column-count: 2;
-      column-count: 2;
-      
-      h3:first-child { margin-top: 0; }
+      column-count: 2; 
+       
+      h3:first-child { margin-top: 0; } 
 
       h3 { column-break-after: avoid; }
     }
@@ -43,6 +49,14 @@
     &__content > * {
       -webkit-column-break-inside: avoid;
       column-break-inside: avoid;
+    }
+  }
+
+  #gifts.section {
+    &__content {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
     }
   }
 }
