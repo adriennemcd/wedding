@@ -19,6 +19,7 @@
     font-weight: normal;
     color: $white;
     transition: font-size ease-out 300ms, top ease-out 300ms; 
+    pointer-events: none;
   }
 
   &.hidden 
